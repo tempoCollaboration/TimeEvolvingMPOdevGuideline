@@ -1,18 +1,19 @@
 # TimeEvolvingMPO Development Guideline
 
-Guideline aimed at developers that are part of the tempo collaboration.
+Guideline for developers of the TEMPO collaboration.
 
 **Contents:**
 
-1. Purpose of the TimeEvolvingMPO package
-2. General development organisation
-3. Installation of the public and private repositories
-4. How the branches are organised
-5. Maintaining the quality of the package
-6. General design: API & backend
-7. How to contribute
-- Appendix A: Contact information and project roles
-- Appendix B: Links
+  1. Purpose of the TimeEvolvingMPO package
+  2. General development organisation
+  3. Installation of the public and private repositories
+  4. How the branches are organised
+  5. Maintaining the quality of the package
+  6. General design: API & backend
+  7. How to contribute
+  - appendix A: Contact information and project roles
+  - appendix B: Links and bibliography
+  
 
 ## 1. Purpose of the TimeEvolvingMPO package
 The purpose of the TimeEvolvingMPO package is to make TEMPO related algorithms publicly accessable and easy to use. It aims at theoretical and experimental physicists that have little or no knowledge on the technical details of TEMPO. It is also designed to be easily extendable with current and future TEMPO related algorithms. It achieves this by distinguishing between physical information and algorithm specific information. The objects that represent the physical information can then be processed by different TEMPO related algorithms, thus also allowing for a playground to compare the performance of the algorithms for specific physical problems. 
@@ -87,7 +88,9 @@ There is a detailed description of how to contribute to the public repository in
 
 The contribution guideline for the private repository is exactly the same, except that it takes place on bitbucket rather then on github.
 
+
 ## Appendix A: Contact information and project roles
+
 **Project administrators:**
 - **Gerald E. Fux** (gf52@st-andrews.ac.uk)
 - Jonathan Keeling (jmjk@st-andrews.ac.uk)
@@ -99,11 +102,8 @@ The contribution guideline for the private repository is exactly the same, excep
 **Members of the TEMPO collaboration:**
 - A small subset of the scientific collaborators arround the authors of the original TEMPO paper [Strathearn2018].
 
-[Strathearn2018] Strathearn, A., Kirton, P., Kilda, D., Keeling, J.
-and Lovett, B.W., 2018. *Efficient non-Markovian quantum dynamics using
-time-evolving matrix product operators.* Nature communications, 9(1), 3322.
 
-## Appendix B: Links
+## Appendix B: Links and bibliography
 
 |                   |  link                                                                                            |
 | ----------------- | ------------------------------------------------------------------------------------------------ |
@@ -115,3 +115,7 @@ time-evolving matrix product operators.* Nature communications, 9(1), 3322.
 | API design        | <https://bitbucket.org/jkeeling/tempoincubator/issues/2>                                         |
 | CONTRIBUTING.md   | <https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/CONTRIBUTING.md>              |
 | TEMPO paper       | <https://doi.org/10.1038/s41467-018-05617-3> or <https://arxiv.org/abs/1711.09641>               |
+
+[Strathearn2018] Strathearn, A., Kirton, P., Kilda, D., Keeling, J.
+and Lovett, B.W., 2018. *Efficient non-Markovian quantum dynamics using
+time-evolving matrix product operators.* Nature communications, 9(1), 3322.
