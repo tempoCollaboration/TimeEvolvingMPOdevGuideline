@@ -46,7 +46,25 @@ statements into the `development` branch before creating a new feature branch an
 Making decisions on the development structure as well as the code structure is the primary responsability of the maintainers of the project (see appendix A). 
 
 ## 5. Maintaining the quality of the package
-ToDo 
+All contributors of this project should be well aware of the difference between making a python script publicly available and a proper open source python package. For this project we aim to
+
+- Make the package easily accessable:
+  - make it available on PyPI
+  - offer Tutorials (idealy for all features)
+  - offer a documentation that gives a pedagogic overview of the most important functionality
+  - offer a detailed documentation of all functionality 
+- Have a well thought through code structure:
+  - a well defined API and backend
+  - carefully choose what objects contain what sort of information and methods.
+  - carefully choose about how large data (dynamics and process tensors) are stored
+  - carefully choose about how computation intense parts are organised (checkpointing etc.)
+- Guarantee stabil code performance:
+  - using `pytest` and writing as many test cases as possible (aim at 100% coverage)
+- Meet coding style standards:
+  - using `pylint` to write code that is conform with [PEP08](https://www.python.org/dev/peps/pep-0008/).
+  
+The contribution guidlines [`CONTRIBUTING.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/CONTRIBUTING.md) for that) and [`PULL_REQUEST_TEMPLATE.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/PULL_REQUEST_TEMPLATE.md) try to reflect these aims.
+
 
 ## 6. General design: API & backend
 ToDo
