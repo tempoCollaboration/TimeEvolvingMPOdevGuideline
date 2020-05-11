@@ -2,7 +2,7 @@
 
 Guideline aimed at developers that are part of the tempo collaboration.
 
-## Contents:
+**Contents:**
 
 1. Purpose of the TimeEvolvingMPO package
 2. General development organisation
@@ -10,8 +10,7 @@ Guideline aimed at developers that are part of the tempo collaboration.
 4. How the branches are organised
 5. Maintaining the quality of the package
 6. General design: API & backend
-7. API design
-8. How to contribute
+7. How to contribute
 - Appendix A: Contact information and project roles
 - Appendix B: Links
 
@@ -63,17 +62,17 @@ All contributors of this project should be well aware of the difference between 
 - Meet coding style standards:
   - using `pylint` to write code that is conform with [PEP08](https://www.python.org/dev/peps/pep-0008/).
   
-The contribution guidlines [`CONTRIBUTING.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/CONTRIBUTING.md) for that) and [`PULL_REQUEST_TEMPLATE.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/PULL_REQUEST_TEMPLATE.md) try to reflect these aims.
+The contribution guidlines [`CONTRIBUTING.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/CONTRIBUTING.md) and [`PULL_REQUEST_TEMPLATE.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/PULL_REQUEST_TEMPLATE.md) try to reflect these aims.
 
 
 ## 6. General design: API & backend
 ToDo
 
-## 7. API design
-ToDo
+## 7. How to contribute
+There is a detailed description of how to contribute to the public repository in the file [`CONTRIBUTING.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/CONTRIBUTING.md) and a checklist for pull requests
+[`PULL_REQUEST_TEMPLATE.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/PULL_REQUEST_TEMPLATE.md).
 
-## 8. How to contribute
-ToDo
+The contribution guideline for the private repository exactly the same, except that it takes place on bitbucket rather then on github.
 
 ## Appendix A: Contact information and project roles
 **Project administrators:**
@@ -89,7 +88,7 @@ ToDo
 
 [Strathearn2018] Strathearn, A., Kirton, P., Kilda, D., Keeling, J.
 and Lovett, B.W., 2018. *Efficient non-Markovian quantum dynamics using
-time-evolving matrix product operators.* Nature communications, 9(1), pp.1-9.
+time-evolving matrix product operators.* Nature communications, 9(1), 3322.
 
 ## Appendix B: Links
 ToDo
