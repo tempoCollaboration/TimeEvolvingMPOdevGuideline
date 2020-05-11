@@ -104,4 +104,14 @@ and Lovett, B.W., 2018. *Efficient non-Markovian quantum dynamics using
 time-evolving matrix product operators.* Nature communications, 9(1), 3322.
 
 ## Appendix B: Links
-ToDo
+
+|                   |  link                                                                                            |
+| ----------------- | ------------------------------------------------------------------------------------------------ |
+| Github            | <https://github.com/tempoCollaboration/TimeEvolvingMPO>                                          |
+| Bitbucket         | <https://bitbucket.org/jkeeling/tempoincubato>                                                   |
+| Documentation     | <https://TimeEvolvingMPO.readthedocs.io>                                                         |
+| PyPI              | <https://pypi.org/project/time-evolving-mpo/>                                                    |
+| Tutorial          | <https://mybinder.org/v2/gh/tempoCollaboration/TimeEvolvingMPO/master?filepath=tutorial.ipynb>   |
+| API design        | <https://bitbucket.org/jkeeling/tempoincubator/issues/2>                                         |
+| CONTRIBUTING.md   | <https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/CONTRIBUTING.md>              |
+| TEMPO paper       | <https://doi.org/10.1038/s41467-018-05617-3> or <https://arxiv.org/abs/1711.09641>               |
