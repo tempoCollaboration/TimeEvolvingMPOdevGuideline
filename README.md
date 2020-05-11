@@ -66,13 +66,26 @@ The contribution guidlines [`CONTRIBUTING.md`](https://github.com/tempoCollabora
 
 
 ## 6. General design: API & backend
-ToDo
+Because the TimeEvolvingMPO aims at beeing easily extendable with current and future TEMPO related algorithms it is neccessary to carefully choose the design of the code. In the current approach is almost fully object oriented and there are essentially three layers:
+
+1. The physical layer
+2. The TEMPO algorithms layer
+3. The backend layer
+
+**The physical layer**: consists of objects that describe physical quantities, like a system (with a specific Hamiltonian) or the spectral density of an environment. To give an example, all spectral density classes need to be a derived from `BaseSD`, and therefore need to have a method to compute two-time correlations. A derived class that represents an ohmic spectral density `OhmicSD` could then, for example, use analytical expressions (that are specific to the ohmic case) to compute two-time correlation functions. Another derived class that represents a Lorentzian spectral density would encode the position and the width of the Lorentzian.
+
+**The TEMPO algorithms layer**: Gathers the information from the physical layer and feeds it (with particular simulation parameters) into the backend. It has the opportunity to make use of specific, extra information from the physical layer. To get back to the example of the spectral density: while the original version of TEMPO only needs to know the correlation function of an environment and therefore treats all derived classes of `BaseSD` in the same way, a future version (or another feature) could treat the the case of a Lorentzian spectral density by performing a polaron transormation, rather then doing a full TEMPO computation.
+
+**The backend layer**: Is the part of the code where the task has been reduced to a mathematically well defined computation, such as a specific tensornetwork or an integral. For each algorithm `X` there should exist a corresponding `BaseXBackend` that clearly defines the in and output of the backend for this algorithm. This allowes to create more than one impementation of the computation intensive bits, which can then be easily chosen at runtime before starting the computation. This not only allows to compare the performance of different implementations, it also allows to write hardware specialised implementations (single CPU, cluster, GPU) while keeping the other two layers untouched.
+
+The design of the API (application programming interface) is currently discussed in the issues section of the private repository: [API design](https://bitbucket.org/jkeeling/tempoincubator/issues/2)
+
 
 ## 7. How to contribute
 There is a detailed description of how to contribute to the public repository in the file [`CONTRIBUTING.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/CONTRIBUTING.md) and a checklist for pull requests
 [`PULL_REQUEST_TEMPLATE.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/PULL_REQUEST_TEMPLATE.md).
 
-The contribution guideline for the private repository exactly the same, except that it takes place on bitbucket rather then on github.
+The contribution guideline for the private repository is exactly the same, except that it takes place on bitbucket rather then on github.
 
 ## Appendix A: Contact information and project roles
 **Project administrators:**
