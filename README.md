@@ -1,6 +1,6 @@
 # TimeEvolvingMPO Development Guideline
 
-Guideline for developers of the TEMPO collaboration.
+Guideline for developers that are part of the TEMPO collaboration.
 
 **Contents:**
 
