@@ -29,13 +29,13 @@ with:
 $ python3 -m pip install time_evolving_mpo
 ```
 
-For the installation of the private repository you will first need to get access to it, by contacting a current administrator  of the project (see Appendix A) and sending your email address that is linked to the bitbucket account you wish to use. 
+For the installation of the private repository you will first need to get access to it by contacting a current administrator  of the project (see appendix A) and attaching your email address of the bitbucket account you wish to use. 
 For generating the documentation of the private repository or to set up the general development environment you will need `python==3.6`, `pip`, `git` and `tox` installed. 
 
 There exists a video tutorial on how to get set up to use the public and private repositories. Email a current project administrator (see appendix A) to grant you access to this video.
 
 ## 4. How the branches are organised
-The main branch of the public repository is the `master` branch, i. e. all the public pull requests are merged into this branch. The `master` branch on the private repository is periodically updated by the `master` branch from the public repository and should therefore always contain identical commits. Next to the `master` branch the private repository has a `development` branch that possibly contains the features that will be made public next. In addition to this there can be several branches with names of the form `dev-feature-name` that contain a new features that are not yet on the verge of being published. When a new feature is ready to be published the corresponding `dev-feature-name` is merged into the `development` branch, which then in turn is merged into the master branch. It is therefore important not to park code in the development branch that can't be published, as this would hinder other features to be published when they are ready. 
+The main branch of the public repository is the `master` branch, i. e. all the public pull requests are merged into this branch. The `master` branch on the private repository is periodically updated by the `master` branch from the public repository and should therefore always contain identical commits. Next to the `master` branch the private repository has a `development` branch that contains the features that will soon be made public. In addition to this there can be several branches with names of the form `dev-feature-name` that contain a new features that are not yet on the verge of being published. When a new feature is ready to be published the corresponding `dev-feature-name` is merged into the `development` branch, which then in turn is merged into the master branch. It is therefore important not to park code in the development branch that can't be published, as this would hinder other features to be published when they are ready. 
 
 The `development` branch serves as a reference for all the feature branches, to make the interplay between them smooth and to avoid design conflicts as good as possible. This can be achieved by adding module, class, method and function headers with 
 ```python
