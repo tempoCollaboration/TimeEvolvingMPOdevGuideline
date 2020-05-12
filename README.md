@@ -13,10 +13,10 @@ Guideline for developers that are part of the TEMPO collaboration.
   7. How to contribute
   - appendix A: Contact information and project roles
   - appendix B: Links and bibliography
-  
+
 
 ## 1. Purpose of the TimeEvolvingMPO package
-The purpose of the TimeEvolvingMPO package is to make TEMPO related algorithms publicly accessible and easy to use. It aims at theoretical and experimental physicists that have little or no knowledge on the technical details of TEMPO. It is also designed to be easily extendable with current and future TEMPO related algorithms. It achieves this by distinguishing between physical information and algorithm specific information. The objects that represent the physical information can then be processed by different TEMPO related algorithms, thus also allowing for a playground to compare the performance of the algorithms for specific physical problems. 
+The purpose of the TimeEvolvingMPO package is to make TEMPO related algorithms publicly accessible and easy to use. It aims at theoretical and experimental physicists that have little or no knowledge on the technical details of TEMPO. It is also designed to be easily extendable with current and future TEMPO related algorithms. It achieves this by distinguishing between physical information and algorithm specific information. The objects that represent the physical information can then be processed by different TEMPO related algorithms, thus also allowing for a playground to compare the performance of the algorithms for specific physical problems.
 
 
 ## 2. General development organisation
@@ -29,21 +29,21 @@ with:
 $ python3 -m pip install time_evolving_mpo
 ```
 
-For the installation of the private repository you will first need to get access to it by contacting a current administrator  of the project (see appendix A) and attaching your email address of the bitbucket account you wish to use. 
-For generating the documentation of the private repository or to set up the general development environment you will need `python==3.6`, `pip`, `git` and `tox` installed. 
+For the installation of the private repository you will first need to get access to it by contacting a current administrator  of the project (see appendix A) and attaching your email address of the bitbucket account you wish to use.
+For generating the documentation of the private repository or to set up the general development environment you will need `python==3.6`, `pip`, `git` and `tox` installed.
 
 There exists a video tutorial on how to get set up to use the public and private repositories. Email a current project administrator (see appendix A) to grant you access to this video.
 
 ## 4. How the branches are organised
-The main branch of the public repository is the `master` branch, i. e. all the public pull requests are merged into this branch. The `master` branch on the private repository is periodically updated by the `master` branch from the public repository and should therefore always contain identical commits. Next to the `master` branch the private repository has a `development` branch that contains the features that will soon be made public. In addition to this there can be several branches with names of the form `dev-feature-name` that contain a new features that are not yet on the verge of being published. When a new feature is ready to be published the corresponding `dev-feature-name` is merged into the `development` branch, which then in turn is merged into the master branch. It is therefore important not to park code in the development branch that can't be published, as this would hinder other features to be published when they are ready. 
+The main branch of the public repository is the `master` branch, i. e. all the public pull requests are merged into this branch. The `master` branch on the private repository is periodically updated by the `master` branch from the public repository and should therefore always contain identical commits. Next to the `master` branch the private repository has a `development` branch that contains the features that will soon be made public. In addition to this there can be several branches with names of the form `dev-feature-name` that contain a new features that are not yet on the verge of being published. When a new feature is ready to be published the corresponding `dev-feature-name` is merged into the `development` branch, which then in turn is merged into the master branch. It is therefore important not to park code in the development branch that can't be published, as this would hinder other features to be published when they are ready.
 
-The `development` branch serves as a reference for all the feature branches, to make the interplay between them smooth and to avoid design conflicts as good as possible. This can be achieved by adding module, class, method and function headers with 
+The `development` branch serves as a reference for all the feature branches, to make the interplay between them smooth and to avoid design conflicts as good as possible. This can be achieved by adding module, class, method and function headers with
 ```python
 raise NotImplementedError()
 ```
 statements into the `development` branch before creating a new feature branch and then filling it with actual code. This  allows developers of other features to be aware of the structure of other features already before they are actually coded.
 
-Making decisions on the development structure as well as the code structure is the primary responsibility of the maintainers of the project (see appendix A). 
+Making decisions on the development structure as well as the code structure is the primary responsibility of the maintainers of the project (see appendix A).
 
 ## 5. Maintaining the quality of the package
 All contributors of this project should be well aware of the difference between making a python script publicly available and a proper open source python package. For this project we aim to
@@ -52,7 +52,7 @@ All contributors of this project should be well aware of the difference between 
   - make it available on PyPI
   - offer Tutorials (idealy for all features)
   - offer a documentation that gives a pedagogic overview of the most important functionality
-  - offer a detailed documentation of all functionality 
+  - offer a detailed documentation of all functionality
 - Have a well thought through code structure:
   - a well defined API and backend
   - carefully choose what objects contain what sort of information and methods.
@@ -62,7 +62,7 @@ All contributors of this project should be well aware of the difference between 
   - using `pytest` and writing as many test cases as possible (aim at 100% coverage)
 - Meet coding style standards:
   - using `pylint` to write code that is conform with [PEP08](https://www.python.org/dev/peps/pep-0008/).
-  
+
 The contribution guidelines [`CONTRIBUTING.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/CONTRIBUTING.md) and [`PULL_REQUEST_TEMPLATE.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/PULL_REQUEST_TEMPLATE.md) try to reflect these aims.
 
 
@@ -94,13 +94,14 @@ The contribution guideline for the private repository is exactly the same, excep
 **Project administrators:**
 - **Gerald E. Fux** (gf52@st-andrews.ac.uk)
 - Jonathan Keeling (jmjk@st-andrews.ac.uk)
+- Brendon W. Lovett (bwl4@st-andrews.ac.uk)
 
 **Project maintainers:**
 - **Gerald E. Fux** (gf52@st-andrews.ac.uk)
 - Peter Kirton (peter.kirton@strath.ac.uk)
 
 **Members of the TEMPO collaboration:**
-- A small subset of the scientific collaborators around the authors of the original TEMPO paper [Strathearn2018].
+- A small subset of scientific collaborators around the authors of the original TEMPO paper [Strathearn2018].
 
 
 ## Appendix B: Links and bibliography
