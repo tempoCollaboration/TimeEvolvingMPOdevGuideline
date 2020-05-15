@@ -92,16 +92,21 @@ The contribution guideline for the private repository is exactly the same, excep
 ## Appendix A: Contact information and project roles
 
 **Project administrators:**
-- **Gerald E. Fux** (gf52@st-andrews.ac.uk)
-- Jonathan Keeling (jmjk@st-andrews.ac.uk)
-- Brendon W. Lovett (bwl4@st-andrews.ac.uk)
+- [**Gerald E. Fux**](https://github.com/gefux) (<gf52@st-andrews.ac.uk>)
+- Jonathan Keeling (<jmjk@st-andrews.ac.uk>)
+- Brendon W. Lovett (<bwl4@st-andrews.ac.uk>)
 
 **Project maintainers:**
-- **Gerald E. Fux** (gf52@st-andrews.ac.uk)
-- Peter Kirton (peter.kirton@strath.ac.uk)
+- [**Gerald E. Fux**](https://github.com/gefux) (<gf52@st-andrews.ac.uk>)
+- [Peter Kirton](https://github.com/peterkirton) (<peter.kirton@strath.ac.uk>)
 
-**Members of the TEMPO collaboration:**
-- A small subset of scientific collaborators around the authors of the original TEMPO paper [Strathearn2018].
+**Members of the TEMPO collaboration** (alphabetical)
+- [**Gerald E. Fux**](https://github.com/gefux) (*University of St Andrews*) <gf52@st-andrews.ac.uk>
+- **Erik Gauger** (*Heriot-Watt University*) <e.gauger@hw.ac.uk>
+- **Jonathan Keeling** (*University of St Andrews*) <jmjk@st-andrews.ac.uk>
+- [**Peter Kirton**](https://github.com/peterkirton) (*University of Strathclyde*) <peter.kirton@strath.ac.uk>
+- [**Thibaut Lacroix**](https://github.com/tfmlaX) (*University of St Andrews*) <tfml1@st-andrews.ac.uk>
+- **Brendon W. Lovett** (*University of St Andrews*) <bwl4@st-andrews.ac.uk>
 
 
 ## Appendix B: Links and bibliography
