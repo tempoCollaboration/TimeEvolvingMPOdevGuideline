@@ -63,7 +63,7 @@ All contributors of this project should be well aware of the difference between 
 - Meet coding style standards:
   - using `pylint` to write code that is conform with [PEP08](https://www.python.org/dev/peps/pep-0008/).
 
-The contribution guidelines [`CONTRIBUTING.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/CONTRIBUTING.md) and [`PULL_REQUEST_TEMPLATE.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/PULL_REQUEST_TEMPLATE.md) try to reflect these aims.
+The contribution guidelines [`CONTRIBUTING.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/CONTRIBUTING.md) (for the public repository) / [`incubator-CONTRIBUTING.md`](https://github.com/tempoCollaboration/TimeEvolvingMPOdevGuideline/blob/master/incubator-CONTRIBUTING.md) (for the private repository) and [`PULL_REQUEST_TEMPLATE.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/PULL_REQUEST_TEMPLATE.md) try to reflect these aims.
 
 
 ## 6. General design: API & backend
@@ -120,6 +120,7 @@ The contribution guideline for the private repository is exactly the same, excep
 | Tutorial          | <https://mybinder.org/v2/gh/tempoCollaboration/TimeEvolvingMPO/master?filepath=tutorial.ipynb>   |
 | API design        | <https://bitbucket.org/jkeeling/tempoincubator/issues/2>                                         |
 | CONTRIBUTING.md   | <https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/CONTRIBUTING.md>              |
+| incubator-CONTRIBUTING.md | <https://github.com/tempoCollaboration/TimeEvolvingMPOdevGuideline/blob/master/incubator-CONTRIBUTING.md> |
 | TEMPO paper       | <https://doi.org/10.1038/s41467-018-05617-3> or <https://arxiv.org/abs/1711.09641>               |
 
 [Strathearn2018] Strathearn, A., Kirton, P., Kilda, D., Keeling, J.
