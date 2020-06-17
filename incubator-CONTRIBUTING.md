@@ -255,7 +255,7 @@ the maintainer will merge your changes into the project. If some aspects of the
 contribution need to be changed, the maintainer might ask you if you'd be
 willing to perform these changes. In this case you can simply make further
 changes to your pull request branch and push them to your fork. This will
-automatically update your pull request, and therfore you need not create a one.
+automatically update your pull request, and therfore you need not create a new one.
 
 
 **-- The End --**
