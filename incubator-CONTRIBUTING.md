@@ -7,7 +7,7 @@ The main code structure is currently under development and therefore the
 suggestion or general thoughts on this library we'd very much appreciate if you
 share them with us. For this please feel free to file an issue in the
 [Issues](https://bitbucket.org/jkeeling/tempoincubator/issues?status=new&status=open) section
-on github. Once we are off the ground with the code your code contributions are
+on ~~github~~ bitbucket. Once we are off the ground with the code your code contributions are
 very welcome as well.
 
 For the coding bit of the project we try to follow these general guidlines:
@@ -45,7 +45,7 @@ to this project below.
 ### Overview:
 
 1. Discuss the issue in the [Issue section](https://bitbucket.org/jkeeling/tempoincubator/issues)
-2. Create a fork of this repository on Github
+2. Create a fork of this repository on Bitbucket
 3. Clone your fork to your local machine
 4. Setup your local environment
 5. Create a new branch pr/topic-name
@@ -79,12 +79,12 @@ time to avoid overlap or conflicts with other contributions. This is essential
 to ensure that your work fits well into the project.
 
 
-### 2. Create a fork of this repository on Github
+### 2. Create a fork of this repository on bitbucket
 If you have discussed your plans in the
 [Issue section](https://bitbucket.org/jkeeling/tempoincubator/issues)
 and would like to make a direct contribution to the code or documentation,
 you will need to [create a fork](https://confluence.atlassian.com/bitbucket/forking-a-repository-221449527.html)
-of the repository on your github account. This creats a linked copy on your
+of the repository on your ~~github~~ bitbucket account. This creats a linked copy on your
 account which you can modify to your liking. You can then
 [create a pull request](https://confluence.atlassian.com/bitbucket/create-a-pull-request-to-merge-your-change-774243413.html)
 to suggest your changes to this project.
