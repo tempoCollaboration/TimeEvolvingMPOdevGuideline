@@ -1,9 +1,12 @@
 # How to Contribute
+
+**This is an adaption of the [`CONTRIBUTING.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/CONTRIBUTING.md) for the private [`tempoIncubator`](https://bitbucket.org/jkeeling/tempoincubator) repository**
+
 The main code structure is currently under development and therefore the
 **project is not yet ready for code contributions.** If you have any question,
 suggestion or general thoughts on this library we'd very much appreciate if you
 share them with us. For this please feel free to file an issue in the
-[Issues](https://github.com/tempoCollaboration/TimeEvolvingMPO/issues) section
+[Issues](https://bitbucket.org/jkeeling/tempoincubator/issues?status=new&status=open) section
 on github. Once we are off the ground with the code your code contributions are
 very welcome as well.
 
@@ -19,17 +22,18 @@ The current setup uses:
 * [pylint](https://www.pylint.org/) ... for code style checks.
 * [sphinx](https://www.sphinx-doc.org) ... for generating the documentation.
 * [tox](https://tox.readthedocs.io) ... for testing with different environments.
-* [travis](https://travis-ci.com) ... for continues integration.
+* ~~[travis](https://travis-ci.com) ... for continues integration.~~
+* [CircleCI](https://circleci.com) ... for continues integration.
 
 ## How to contribute to the code or documentation
 Please use the
-[Issues](https://github.com/tempoCollaboration/TimeEvolvingMPO/issues) and
-[Pull requests](https://github.com/tempoCollaboration/TimeEvolvingMPO/pulls)
+[Issues](https://bitbucket.org/jkeeling/tempoincubator/issues) and
+[Pull requests](https://bitbucket.org/jkeeling/tempoincubator/pull-requests/)
 system on github.
 
 If you are familiar with the process of contributing to an open source project
 please make sure you tick all (or most) appropriate boxes in
-[`PULL_REQUEST_TEMPLATE.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/PULL_REQUEST_TEMPLATE.md)
+[`PULL_REQUEST_TEMPLATE.md`](https://bitbucket.org/jkeeling/tempoincubator/src/development/PULL_REQUEST_TEMPLATE.md)
 before submitting a pull request.
 
 If you haven't done this sort of thing before, this link
@@ -40,15 +44,15 @@ to this project below.
 
 ### Overview:
 
-1. Discuss the issue in the [Issue section](https://github.com/tempoCollaboration/TimeEvolvingMPO/issues)
+1. Discuss the issue in the [Issue section](https://bitbucket.org/jkeeling/tempoincubator/issues)
 2. Create a fork of this repository on Github
-3. Setup your local environment
-4. Clone your fork to your local machine
+3. Clone your fork to your local machine
+4. Setup your local environment
 5. Create a new branch pr/topic-name
 6. Make your changes and tick the boxes
 7. Check your code: run tests
 8. Tidy up: Rebase and squash
-9. Create a [pull requests](https://github.com/tempoCollaboration/TimeEvolvingMPO/pulls)
+9. Create a [pull requests](https://bitbucket.org/jkeeling/tempoincubator/pull-requests/)
 10. Make changes to your pull request
 
 
@@ -68,7 +72,7 @@ to discuss them first. Communication is essential to make sure your contribution
 fits to the goals of the project.
 
 Go to the
-[Issue section](https://github.com/tempoCollaboration/TimeEvolvingMPO/issues)
+[Issue section](https://bitbucket.org/jkeeling/tempoincubator/issues)
 and file an issue to share your thoughts. Ideally you discuss your plans with
 others (particularly a maintainer) before you invest any significant amount of
 time to avoid overlap or conflicts with other contributions. This is essential
@@ -77,29 +81,29 @@ to ensure that your work fits well into the project.
 
 ### 2. Create a fork of this repository on Github
 If you have discussed your plans in the
-[Issue section](https://github.com/tempoCollaboration/TimeEvolvingMPO/issues)
+[Issue section](https://bitbucket.org/jkeeling/tempoincubator/issues)
 and would like to make a direct contribution to the code or documentation,
-you will need to [create a fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+you will need to [create a fork](https://confluence.atlassian.com/bitbucket/forking-a-repository-221449527.html)
 of the repository on your github account. This creats a linked copy on your
 account which you can modify to your liking. You can then
-[create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
+[create a pull request](https://confluence.atlassian.com/bitbucket/create-a-pull-request-to-merge-your-change-774243413.html)
 to suggest your changes to this project.
 
 
 ### 3. Clone your fork to your local machine
 Next, you will need to
-[clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+[clone](https://confluence.atlassian.com/bitbucket/clone-a-repository-223217891.html)
 to your fork to your local machine and add the original repository as a remote
 resource with:
 
 ```bash
 $ #if you use ssh:
-$ git remote add upstream git@github.com:tempoCollaboration/TimeEvolvingMPO.git
+$ git remote add upstream git@bitbucket.org:jkeeling/tempoincubator.git
 $ #if you use https
-$ git remote add upstream https://github.com/tempoCollaboration/TimeEvolvingMPO.git
+$ git remote add upstream https://gefux@bitbucket.org/jkeeling/tempoincubator.git
 
 $ git fetch upstream
-$ git branch --set-upstream-to=upstream/master master
+$ git branch --set-upstream-to=upstream/development development
 ```
 
 With this, if there is a change to the original repository, you can bring your
@@ -107,9 +111,9 @@ fork up to date by pulling from the `upstream` remote repository (the original
 repository) and pushing to the `origin` remote repository (your fork).
 
 ```bash
-$ git checkout master
-$ git pull upstream master
-$ git push origin master
+$ git checkout development
+$ git pull upstream development
+$ git push origin development
 ```
 
 ### 4. Setup your local environment
@@ -141,7 +145,7 @@ To group together all the changes you make, you should create a new temporary
 branch. We suggest to use a name of the form `pr/topic-name` for this branch.
 Create the new branch on your fork with:
 ```bash
-$ git checkout master
+$ git checkout development
 $ git checkout -b pr/add-documentation-to-dynamics
 $ git push --set-upstream origin pr/add-documentation-to-dynamics
 ```
@@ -153,7 +157,7 @@ cycles and push them to your fork.
 
 Later, when you create the pull request (section 9) these changes will be
 reviewed by a maintainer who will check all neccessary boxes in
-[`PULL_REQUEST_TEMPLATE.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/PULL_REQUEST_TEMPLATE.md)
+[`PULL_REQUEST_TEMPLATE.md`](https://bitbucket.org/jkeeling/tempoincubator/src/development/PULL_REQUEST_TEMPLATE.md)
 to guarantee the quality of the package. Therefore, during the process of
 creating your changes, it is advisable to occasionally compare your work
 against this list and periodically run the automated tests (see section 7).
@@ -163,7 +167,7 @@ not to deter you from contributing.
 
 ### 7. Check your code: run tests
 Three of the boxes in
-[`PULL_REQUEST_TEMPLATE.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/PULL_REQUEST_TEMPLATE.md) are checked automatically when new commits are
+[`PULL_REQUEST_TEMPLATE.md`](https://bitbucket.org/jkeeling/tempoincubator/src/development/PULL_REQUEST_TEMPLATE.md) are checked automatically when new commits are
 added to the project, namely:
 
 * execute the tests that check the functionality of the package (with `pytest`)
@@ -236,9 +240,9 @@ unsure, feel free to skip this tidying up process.
 
 ### 9. Create a pull requests
 You can now
-[create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+[create a pull request](https://confluence.atlassian.com/bitbucket/create-a-pull-request-to-merge-your-change-774243413.html).
 This request will then be reviewed by a maintainer who will check all neccessary boxes in
-[`PULL_REQUEST_TEMPLATE.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/PULL_REQUEST_TEMPLATE.md)
+[`PULL_REQUEST_TEMPLATE.md`](https://bitbucket.org/jkeeling/tempoincubator/src/development/PULL_REQUEST_TEMPLATE.md)
 to guarantee the quality of the package.
 Therefore, before you submit the pull request, go through this checklist once
 more. However, this list is there to *help* all contributors to produce high
@@ -249,12 +253,12 @@ pull request message.
 
 ### 10. Make changes to your pull request
 You should find the pull request you created in section 9 on the
-[pull request page](https://github.com/tempoCollaboration/TimeEvolvingMPO/pulls).
+[pull request page](https://bitbucket.org/jkeeling/tempoincubator/pull-requests/).
 All the rest of the communication will happen there.
 
 You can expect to hear back from a maintainer within one to two weeks. If your
 contribution checks all the boxes in
-`PULL_REQUEST_TEMPLATE.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/PULL_REQUEST_TEMPLATE.md)
+`PULL_REQUEST_TEMPLATE.md`](https://bitbucket.org/jkeeling/tempoincubator/src/development/PULL_REQUEST_TEMPLATE.md)
 the maintainer will merge your changes into the project. If some aspects of the
 contribution need to be changed, the maintainer might ask you if you'd be
 willing to perform these changes. In this case you can simply make further
