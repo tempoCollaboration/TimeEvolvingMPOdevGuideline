@@ -230,7 +230,7 @@ should create a local backup before using it. However, if you are
 unsure, feel free to skip this tidying up process.  
 
 
-### 9. Create a pull requests
+### 9. Create a pull request
 You can now
 [create a pull request](https://confluence.atlassian.com/bitbucket/create-a-pull-request-to-merge-your-change-774243413.html).
 This request will then be reviewed by a maintainer who will check all neccessary boxes in
