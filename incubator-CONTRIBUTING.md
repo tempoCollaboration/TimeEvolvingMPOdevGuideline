@@ -2,14 +2,6 @@
 
 **This is an adaption of the [`CONTRIBUTING.md`](https://github.com/tempoCollaboration/TimeEvolvingMPO/blob/master/CONTRIBUTING.md) for the private [`tempoIncubator`](https://bitbucket.org/jkeeling/tempoincubator) repository**
 
-The main code structure is currently under development and therefore the
-**project is not yet ready for code contributions.** If you have any question,
-suggestion or general thoughts on this library we'd very much appreciate if you
-share them with us. For this please feel free to file an issue in the
-[Issues](https://bitbucket.org/jkeeling/tempoincubator/issues?status=new&status=open) section
-on ~~github~~ bitbucket. Once we are off the ground with the code your code contributions are
-very welcome as well.
-
 For the coding bit of the project we try to follow these general guidlines:
 
 * [the zen of python](https://www.python.org/dev/peps/pep-0020/)
