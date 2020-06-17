@@ -29,7 +29,7 @@ The current setup uses:
 Please use the
 [Issues](https://bitbucket.org/jkeeling/tempoincubator/issues) and
 [Pull requests](https://bitbucket.org/jkeeling/tempoincubator/pull-requests/)
-system on github.
+system on ~~github~~ bitbucket.
 
 If you are familiar with the process of contributing to an open source project
 please make sure you tick all (or most) appropriate boxes in
